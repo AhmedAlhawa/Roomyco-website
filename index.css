@@ -143,6 +143,18 @@
         margin-left: 100px;
     }
 }
+@media (max-width:576px) {
+.landing{
+    display: flex;
+    text-align: center;
+}
+.landing .room{
+    margin-left: 20px;
+}
+.get-start2{
+    margin-left: 0;
+}
+}
 /* carousel */
 .main-carousel{
     box-sizing: border-box;
@@ -313,6 +325,26 @@ text-align: center;
     position: absolute;
     left: 5% !important;
     width: 20%;
+}
+@media (max-width:576px) {
+    .about-app .main-app .right .parg,.about-app .main-app .right .line{
+        display: none;
+    }
+    .about-app{
+        position: relative;
+    }
+    .about-app .main-app .right{
+        margin-right: 50%;
+    }
+    .about-app .main-app{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-app .main-app .left img{
+        display: none;
+    }
 }
 }
 /* Faq */
