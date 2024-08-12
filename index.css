@@ -1,0 +1,457 @@
+.main{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+.navbar{
+    background-color: #FFFEF9 ;
+}
+.navbar-brand{
+    letter-spacing: 0.5rem;
+    color: #2387C2 !important;
+}
+.get-start{
+    background-color: #2387C2 !important;
+    border:1px solid #2387C2 ;
+}
+.rommate{
+    color: #2387C2;
+    font-weight: 600;
+}
+.room{
+    color: #035781;
+    font-weight: 600;
+}
+.border{
+    position: relative;
+    width: 40px;
+    height: 55px;
+    border-radius: 34px;
+    background-color: #FFFEF9;
+}
+.border img{
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+.findPrefer{
+    width: 100%;
+    font-size: 12px;
+}
+/* Landing Page */
+ .landing{
+    display: flex;
+    justify-content: space-around;
+}
+.girl-section{
+    position: relative;
+    display: flex;
+}
+
+.search{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+.girl-section .star1{
+    position: absolute;
+    top: 65%;
+    left: 14px;
+}
+.girl-section .star2{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+.girl-section .star3{
+    position: absolute;
+    top: 75%;
+    right: 5%;
+}
+.girl-section .line{
+    position: absolute;
+    top: 35%;
+    right: -8%;
+}
+@media (max-width:768px) {
+    .room{
+        width: 80%;
+        text-align: center;
+    }
+    .border{
+        width: 12% !important;
+    }    
+}
+.man-section{
+    position: relative;
+    display: flex;
+}
+.man-section .star1{
+    position: absolute;
+    top: 190px;
+    left: 5px;
+}
+.man-section .star2{
+    position: absolute;
+    top: 40px;
+    left: 5px;
+}
+.man-section .star3{
+    position: absolute;
+    top:30px;
+    right: 60px;
+}
+.man-section .line1{
+    position: absolute;
+    top: 100px;
+    left: -50px;
+}
+.man-section .line2{
+    position: absolute;
+    top: 180px;
+    right:  40px;
+    transform: scaleY(-1);
+}
+.man-section .home{
+    position: absolute;
+    top:90px;
+    right: 0px;
+}
+.man-section .man{
+    position: absolute;
+    left: -40px;
+}
+.get-start2{
+    background-image: linear-gradient(to right , #FFD433,#997F1F);
+    border-image: linear-gradient(to right , #FFD433,#997F1F);
+    padding: 10px;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+}
+
+@media (max-width:768px) {
+    .man-section{
+        display: none;
+    }
+    .get-start2{
+        text-align: center;
+        margin-left: 100px;
+    }
+}
+/* carousel */
+.main-carousel{
+    box-sizing: border-box;
+    background-color: #035781;
+    display: flex;
+    margin-bottom: 0;
+    height: 100vh;
+}
+.main-carousel .carousel-right{
+    position: relative;
+    display: flex;    
+    margin-left: 150px !important;
+}
+.carousel-inner{
+    border:3px solid #fff ;
+    background-color: #fff;
+    margin-left: 150px;
+    border-radius: 10px;
+    height: 500px;
+}
+.carousel-inner .carousel-item{
+    position: relative;
+}
+.carousel-inner .carousel-item p{
+    width: 100%;
+    /* margin: 0; */
+    text-align: center;
+    background-color: #EEEEEE;
+    padding: 50px 0;
+    margin-top: 80px;
+    font-weight: bold;
+}
+.indic{
+    position: absolute;
+    top: -50px;
+    transform:rotate(-90deg);
+}
+.indic button{
+    transform:scaleY(4.5);
+    transform:scaleX(4.7);
+    width: 200px;
+    height: 200px;
+    margin-top: 160px;
+}
+.carousel-left{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 200px !important;
+    margin-left: 50px;
+}
+.carousel-left .line1{
+    position: absolute;
+    top: -100px;
+    left: -40px;
+}
+.carousel-left .line2{
+position: absolute;
+right: -290px;
+}
+.carousel-left .star{
+    position: absolute;
+    top: -140px;
+    right: -30px;
+}
+.carousel-left .corn{
+position: absolute;
+bottom: 0;
+left: 0;
+}
+
+@media (max-width:992px) {
+.main-carousel{
+height: fit-content;
+display: flex;
+justify-content: center;
+}
+.main-carousel .carousel-left{
+    width: 25%;
+    font-size: 30px !important;
+}
+.main-carousel .carousel-right{
+margin-right: 150px;
+}
+.main-carousel .carousel-right .carousel-inner {
+    height: 80%;
+}
+}
+@media (max-width:768px) {
+    .main-carousel .carousel-left{
+        width: 100% !important;
+    }
+    .main-carousel .carousel-right{
+        width: 50% !important;
+        height: 50%;
+        margin-right: 360px;
+    }
+}
+/* About Our App */
+.about-app{
+    background-color: #FFFEF9;
+    height: 100vh;
+}
+.about-app .title{
+    color: #035781;
+}
+.about-app .title span{
+color: #F3704A;
+text-align: center;
+}
+.about-app .left{
+    position: relative;
+    margin-top: 90px;
+    animation: backInLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+.about-app .left .profile{
+    position: absolute;
+    top: 20px;
+    left: 220px;
+}
+.about-app .right {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .about-app .right .arrows{
+    display: flex;
+} 
+.about-app .right .arrow{
+    border: 1px solid #111;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+.about-app .right button{
+    border-radius: 20px;
+    background-color: #035781;
+    padding: 8px 30px;
+}
+
+@media (max-width:992px) {
+.about-app {
+    position: relative;
+    /* margin-top: 90px; */
+}
+.about-app .left img{
+    position: absolute !important;
+    left: 10% !important;
+}
+.about-app .right{
+    margin-left: 24%;
+    margin-top: 0%;
+}
+    }
+@media (max-width:768px) {
+.about-app .main-app .right .parg{
+    display: none;
+}
+.about-app .right{
+    width: 50%;
+    margin-left: 300px;
+
+}
+.about-app .left img{
+    position: absolute;
+    left: 5% !important;
+    width: 20%;
+}
+}
+/* Faq */
+.faq{
+    background-color: #FFFEF9;
+    height: fit-content;
+}
+.faq .title ,.who-we .title{
+    color: #035781;
+    text-align: center;
+}
+.faq .card{
+    width: 30%;
+    height: 200px;
+
+}
+.faq .card .card-body{
+    position: relative;
+}
+.faq .card .card-body img{
+position: absolute;
+bottom: 0;
+right: 0;
+}
+.faq .card.c1{
+    background-color:#FAEFC7;
+    height: 70%;
+}
+.faq .card.c2{
+    background-color:#BEDFF3;
+    /* height: 200%; */
+
+}
+.faq .card.c3{
+    background-color:#F3704A    ;
+    height: 70%;
+
+}
+.faq .card .card-text{
+    width: 60%;
+}
+.faq .card .card-text2{
+    width: 50%;
+}
+@media (max-width:992px) {
+    .faq .main{
+        display: flex !important;
+        flex-direction: column !important;
+}
+.faq .card .card-body img{
+    width: 20%;
+    height: 60%;
+}
+.faq .card {
+width: 100% !important;
+}
+}
+@media (max-width:768px) {
+.faq .main{
+    margin-top: 100px;
+    display: flex !important;
+    flex-direction: column !important;
+}
+.faq .card .card-body img{
+    width: 20%;
+    height: 60%;
+}
+.faq .card {
+width: 100% !important;
+}
+}
+/* Who we are */
+.who-we{
+    height: fit-content !important;
+}
+
+.who-we .business{
+    margin-left: 80px;
+}
+.who-we .main2{
+    display: flex;
+    justify-content: center ;
+}
+
+@media (max-width:992px) {
+.who-we{
+    height: 80vh;
+    margin-top: 150px;
+}
+.main2{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+}
+@media (max-width:768px) {
+.main2{
+
+}
+}
+.copy-right{
+    margin-top: 5% !important;
+    border: 1px solid #BEDFF3;
+    border-bottom: none;
+    padding-top: 10px;
+    height: 100px;
+    width: 100%;
+    border-radius: 20px;
+}
+.form-section{
+    padding: 100px;
+}
+.form-section .lets-talk{
+    background-color: #0f7fb8;
+}
+.form-section .form-sec{
+    position: relative;
+background-color: #e9ecef;
+}
+.form-section .form-sec input{
+    border-radius: 15px 15px 15px 15px;
+}
+.form-section .form-sec img{
+    position: absolute;
+    right: 0.5%;
+    bottom: 3%;
+}
+.form-section .btn{
+    background-color: #0f7fb8 !important;
+    color: #fff;
+    width: 30%;
+    height: 30%;
+    margin-left: 30%;
+    border-radius: 100px 100px 100px 100px;
+}
+.form-section .btn:hover{
+    background-color: #0f7fb8;
+    color: #FFFEF9;
+}
+.form-section .message{
+    background-color:#FFD433;
+    height: 50px;
+}
