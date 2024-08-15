@@ -27,17 +27,10 @@
     font-weight: 600;
 }
 .border{
-    position: relative;
-    width: 40px;
-    height: 55px;
     border-radius: 34px;
     background-color: #FFFEF9;
 }
-.border img{
-    position: absolute;
-    top: 12px;
-    left: 10px;
-}
+
 .findPrefer{
     width: 100%;
     font-size: 12px;
@@ -57,27 +50,27 @@
     top: 150px;
     left: 50px;
 }
-.girl-section .star1{
+.girl-section .star1 /*red*/{
     position: absolute;
     top: 65%;
-    left: 14px;
+    left: 10px;
 }
-.girl-section .star2{
+.girl-section .star2 /*yellow*/{
     position: absolute;
     top: 5%;
-    left: 25%;
+    left: 22%;
 }
-.girl-section .star3{
+.girl-section .star3 /*blue*/{
     position: absolute;
     top: 75%;
-    right: 5%;
+    right: 35%;
 }
 .girl-section .line{
     position: absolute;
     top: 35%;
-    right: -8%;
+    right: 28%;
 }
-@media (max-width:768px) {
+@media (max-width:992px) {
     .room{
         width: 80%;
         text-align: center;
@@ -85,6 +78,14 @@
     .border{
         width: 12% !important;
     }    
+.girl-section .line{
+    display: none;
+}
+.girl-section .star3 /*blue*/{
+    position: absolute;
+    top: 75%;
+    right: 15%;
+}
 }
 .man-section{
     position: relative;
@@ -105,11 +106,7 @@
     top:30px;
     right: 60px;
 }
-.man-section .line1{
-    position: absolute;
-    top: 100px;
-    left: -50px;
-}
+
 .man-section .line2{
     position: absolute;
     top: 180px;
@@ -133,14 +130,29 @@
     color: #fff;
     border-radius: 50px;
 }
-
-@media (max-width:768px) {
-    .man-section{
+@media (max-width:1200px) {
+    .man-section .line2{
         display: none;
+    }
+    .man-section .man{
+        position: absolute;
+        left: 30px;
+        width: 60%;
+    }
+}
+
+@media (max-width:992px) {
+    .man-section .man{
+        position: absolute;
+        left: 40px;
+        width: 50%;
     }
     .get-start2{
         text-align: center;
         margin-left: 100px;
+    }
+    .man-section .line2{
+        display: none;
     }
 }
 @media (max-width:576px) {
@@ -155,57 +167,39 @@
     margin-left: 0;
 }
 }
+
 /* carousel */
+
 .main-carousel{
-    box-sizing: border-box;
     background-color: #035781;
-    display: flex;
-    margin-bottom: 0;
-    height: 100vh;
 }
-.main-carousel .carousel-right{
+.carousel-right{
     position: relative;
     display: flex;    
-    margin-left: 150px !important;
 }
-.carousel-inner{
-    border:3px solid #fff ;
-    background-color: #fff;
-    margin-left: 150px;
-    border-radius: 10px;
-    height: 500px;
+.carousel-right .carousel-item img{
+    border-radius: 10% 10% 0 0;
 }
-.carousel-inner .carousel-item{
-    position: relative;
+.carousel-right .carousel-item p{
+    border-radius:  0 0 20% 20%;
+
 }
-.carousel-inner .carousel-item p{
-    width: 100%;
-    /* margin: 0; */
-    text-align: center;
-    background-color: #EEEEEE;
-    padding: 50px 0;
-    margin-top: 80px;
-    font-weight: bold;
-}
-.indic{
+/* .indic{
     position: absolute;
-    top: -50px;
+    top: 120px;
     transform:rotate(-90deg);
 }
 .indic button{
-    transform:scaleY(4.5);
-    transform:scaleX(4.7);
-    width: 200px;
-    height: 200px;
-    margin-top: 160px;
-}
+    transform:scaleY(8.5);
+    transform:scaleX(8.7);
+    margin-top: -120px;
+} */
 .carousel-left{
     position: relative;
     color: #fff;
     text-align: center;
-    font-size: 50px;
-    margin-top: 200px !important;
-    margin-left: 50px;
+    font-size: 40px;
+    margin-top: 10% !important;
 }
 .carousel-left .line1{
     position: absolute;
@@ -228,231 +222,112 @@ left: 0;
 }
 
 @media (max-width:992px) {
-.main-carousel{
-height: fit-content;
-display: flex;
-justify-content: center;
-}
-.main-carousel .carousel-left{
-    width: 25%;
-    font-size: 30px !important;
-}
-.main-carousel .carousel-right{
-margin-right: 150px;
-}
-.main-carousel .carousel-right .carousel-inner {
-    height: 80%;
+.carousel-left{
+    width: 100%;
+    font-size: 25px ;
+    margin-top: 20% !important;
 }
 }
-@media (max-width:768px) {
-    .main-carousel .carousel-left{
-        width: 100% !important;
-    }
-    .main-carousel .carousel-right{
-        width: 50% !important;
-        height: 50%;
-        margin-right: 360px;
-    }
+
+/* About */
+.about .left img{
+    width: 300px;
+    height:300px;
 }
-/* About Our App */
-.about-app{
-    background-color: #FFFEF9;
-    height: 100vh;
-}
-.about-app .title{
+.about .title{
     color: #035781;
+    margin-left:10% ;
 }
-.about-app .title span{
+.about .title span{
 color: #F3704A;
-text-align: center;
 }
-.about-app .left{
-    position: relative;
-    margin-top: 90px;
+.about .arrows .arrow{
+    border: 1px solid #111;
+    border-radius: 50%;
+}
+.about .buttons button{
+    background-color: #035781;
+}
+.about .left{
     animation: backInLeft;
     animation-duration: 2s;
     animation-iteration-count: 3;
 }
-.about-app .left .profile{
-    position: absolute;
-    top: 20px;
-    left: 220px;
-}
-.about-app .right {
-    margin-top: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
- .about-app .right .arrows{
-    display: flex;
-} 
-.about-app .right .arrow{
-    border: 1px solid #111;
-    border-radius: 50%;
-    margin: 0 15px;
-}
-.about-app .right button{
-    border-radius: 20px;
-    background-color: #035781;
-    padding: 8px 30px;
-}
-
-@media (max-width:992px) {
-.about-app {
-    position: relative;
-    /* margin-top: 90px; */
-}
-.about-app .left img{
-    position: absolute !important;
-    left: 10% !important;
-}
-.about-app .right{
-    margin-left: 24%;
-    margin-top: 0%;
-}
-    }
 @media (max-width:768px) {
-.about-app .main-app .right .parg{
-    display: none;
+.about .left img{
+    width: 75%;
+    height: 75%;
+    left:50px !important
 }
-.about-app .right{
-    width: 50%;
-    margin-left: 300px;
-
+.about .line{
+    width: 90%;
 }
-.about-app .left img{
-    position: absolute;
-    left: 5% !important;
-    width: 20%;
 }
 @media (max-width:576px) {
-    .about-app .main-app .right .parg,.about-app .main-app .right .line{
-        display: none;
-    }
-    .about-app{
-        position: relative;
-    }
-    .about-app .main-app .right{
-        margin-right: 50%;
-    }
-    .about-app .main-app{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-    }
-    .about-app .main-app .left img{
-        display: none;
-    }
+.about .left img{
+    height: 60%;
+    width: 75%;
 }
 }
+
 /* Faq */
-.faq{
-    background-color: #FFFEF9;
-    height: fit-content;
+.faq2 {
+    background-color: #F7F7F7;
 }
-.faq .title ,.who-we .title{
+.faq2 .title , .who .title{
     color: #035781;
-    text-align: center;
 }
-.faq .card{
-    width: 30%;
-    height: 200px;
-
-}
-.faq .card .card-body{
+.faq2 .card{
     position: relative;
+    height: 320px;
+    margin-bottom: 100px;
 }
-.faq .card .card-body img{
-position: absolute;
-bottom: 0;
-right: 0;
+.faq2 .card-body{
+    font-size: 14px;
+    font-weight: 400;
 }
-.faq .card.c1{
+.faq2 .card img{
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+.faq2 .card.c1{
     background-color:#FAEFC7;
-    height: 70%;
 }
-.faq .card.c2{
+.faq2 .card.c2{
     background-color:#BEDFF3;
-    /* height: 200%; */
-
 }
-.faq .card.c3{
-    background-color:#F3704A    ;
-    height: 70%;
-
-}
-.faq .card .card-text{
-    width: 60%;
-}
-.faq .card .card-text2{
-    width: 50%;
+.faq2 .card.c3{
+    background-color:#F3704A;
 }
 @media (max-width:992px) {
-    .faq .main{
-        display: flex !important;
-        flex-direction: column !important;
+.faq2 .card img{
+width: 40%;
+height: 40%;
 }
-.faq .card .card-body img{
-    width: 20%;
-    height: 60%;
-}
-.faq .card {
-width: 100% !important;
+.faq2 .c1 .card-text{
+    width: 80% !important;
 }
 }
-@media (max-width:768px) {
-.faq .main{
-    margin-top: 100px;
-    display: flex !important;
-    flex-direction: column !important;
+@media (max-width:576px) {
+.faq2 .card img{
+        width: 30%;
+        height: 32%;
 }
-.faq .card .card-body img{
-    width: 20%;
-    height: 60%;
-}
-.faq .card {
-width: 100% !important;
+.faq2 .card-body{
+    font-size: 11px;
+    font-weight: 500;
 }
 }
+
 /* Who we are */
-.who-we{
-    height: fit-content !important;
-}
-
-.who-we .business{
-    margin-left: 80px;
-}
-.who-we .main2{
-    display: flex;
-    justify-content: center ;
-}
-
-@media (max-width:992px) {
-.who-we{
-    height: 80vh;
-    margin-top: 150px;
-}
-.main2{
-    display: flex !important;
-    justify-content: space-between !important;
-}
-}
 @media (max-width:768px) {
-.main2{
+.who .left img{
+    width: 80%;
+    height: 90%;
+}
+}
 
-}
-}
-.copy-right{
-    margin-top: 5% !important;
-    border: 1px solid #BEDFF3;
-    border-bottom: none;
-    padding-top: 10px;
-    height: 100px;
-    width: 100%;
-    border-radius: 20px;
-}
 .form-section{
     padding: 100px;
 }
@@ -474,10 +349,11 @@ background-color: #e9ecef;
 .form-section .btn{
     background-color: #0f7fb8 !important;
     color: #fff;
-    width: 30%;
-    height: 30%;
+    /* width: 30%;
+    height: 30%; */
+    padding: 12px;
     margin-left: 30%;
-    border-radius: 100px 100px 100px 100px;
+    border-radius: 80px    ;
 }
 .form-section .btn:hover{
     background-color: #0f7fb8;
@@ -486,4 +362,42 @@ background-color: #e9ecef;
 .form-section .message{
     background-color:#FFD433;
     height: 50px;
+}
+@media (max-width:768px) {
+.form-section .row , .form-section .row input::placeholder{
+    font-size: 13px;
+}
+.form-section .btn{
+    border-radius: 20px      ;
+}
+.form-section .lets-talk{
+    font-size: 13px;
+}
+.form-section .lets-talk .orange,.form-section .lets-talk .planet {
+    display: none;
+}
+}
+@media (max-width:576px) {
+.form-section .row .form-sec div{
+    margin-left: -30px !important;
+}
+.form-section .form-sec input{
+    width: 150% !important;
+}
+.form-section .btn{
+    font-size: 10px;
+    width: 100px ;
+    border-radius: 10px;
+    margin-left: -10px;
+}
+}
+/*  */
+.copy-right{
+    margin-top: 5% !important;
+    border: 1px solid #BEDFF3;
+    border-bottom: none;
+    padding-top: 10px;
+    height: 100px;
+    width: 100%;
+    border-radius: 20px;
 }
