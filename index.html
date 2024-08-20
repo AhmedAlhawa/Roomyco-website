@@ -11,7 +11,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <title>Document</title>
+    <title>R O O M Y C O</title>
 </head>
 <body>
     <div class="main"> 
@@ -42,7 +42,7 @@
                         <path d="M5.24742 7.13991L0.45119 1.6585C-0.11457 1.01192 0.344607 0 1.20377 0H10.7962C11.6554 0 12.1146 1.01192 11.5488 1.6585L6.75257 7.13991C6.35416 7.59524 5.64583 7.59524 5.24742 7.13991Z" fill="black"/>
                         </svg>
                     </div>
-                    <button class="get-start btn btn-primary rounded-lg">Get Start ?</button>
+                    <button id="btn-start" class="get-start btn btn-primary rounded-lg">Get Start ?</button>
              
                   </div>
                   </div>
@@ -379,5 +379,15 @@
  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
+   
+   <script>
+
+  const btn = document.getElementById('btn-start')
+      btn.addEventListener('click',()=>{
+        console.log('getstart clicked')
+        window.location.href ="welcomeBack.html"
+      })
+    </script>
 </body>
 </html>

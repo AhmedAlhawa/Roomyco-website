@@ -1,0 +1,340 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.main-register-3{
+    height: 100vh !important;
+}
+.main-register-3 .numbers{
+    display: flex;
+    flex-direction: column;
+    left: 20% !important;
+    z-index: 2;
+    top: 30%;
+}
+.main-register-3 .numbers span{
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 1px solid #2387c2;
+    color: #2387c2;
+
+}
+@media (max-width:992px) {
+.main-register-3 .numbers span{
+    width: 40px;
+    height: 40px;
+    padding-top: 8px;
+    font-size: 15px;
+}}
+@media (max-width:576px) {
+    .main-register-3 .numbers{
+        left: 13% !important;
+    }
+    .main-register-3 .numbers span{
+        width: 35px;
+        height: 35px;
+        padding-top: 6px;
+    }
+}
+.main-register-3 .numbers span:first-child,.main-register-3 .numbers span:nth-child(2){
+    box-shadow: 1px 1px 20px   #2387c2;
+    background-color: #2387C2;
+    color: #fff;
+    border: 2px solid #5497be;
+}
+.main-register-3 .numbers span:nth-child(3){
+    box-shadow: 1px 1px 20px   #2387c2;
+    border: 2px solid #5497be;
+}
+.main-register-3 .row{
+    height: 100vh;
+}
+.main-register-3 .row .left{
+    background-image: url('../assets/register/Rectangle\ 1043.png');
+    clip-path: polygon(16% 0, 59% 0, 47% 32%, 46% 48%, 46% 62%, 54% 100%, 27% 100%, 0 100%, 0% 35%, 0 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: start !important;
+}
+.main-register-3 .row .left .sentence{
+    margin-top: 30%;
+    margin-left: 10%;
+    color: #035781;
+    font-size: 24px;
+    line-height: 36px;
+    width: 26%;
+}
+.row .logo{
+    display: flex;
+    margin-top: 8%;
+}
+.row .logo .text-1{
+    color: #2387C2;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2px;
+}
+.row .logo .text-2{
+    color: #2387C2;
+    font-weight: 100;
+    font-size: 11px;
+}
+@media (max-width:992px) {
+.main-register-3 .row .left .sentence{
+    font-size: 20px;
+    line-height: 30px;
+    width: 30%;
+}
+.row .logo{
+    margin-left: 2px !important;
+}
+.row .logo .text-1{
+font-weight: 500;
+font-size: 17px;
+}
+.row .logo .text-2{
+    font-size: 9px;
+}}
+@media (max-width:768px) {
+.row .logo .text-1{
+    font-weight: 600;
+    font-size: 12px;
+    }
+}
+@media (max-width:576px) {
+.main-register-3 .row .left .logo{
+    display: flex !important;
+    flex-direction: column !important;
+}
+.main-register-3 .row .left .logo img{
+    margin-left: 10% !important;
+}
+.row .logo .text-1,.row .logo .text-2{
+    margin-top: 8%;
+    margin-left: 8%;
+}}
+
+/* right */
+.main-register-3 .row .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;     
+}
+.main-register-3 .row .right .form-select{
+    margin:2% 2%;
+    width: 30%;
+    border-radius: 10px;
+}
+@media (max-width:1200px){
+.main-register-3 .row .right .religion , .main-register-3 .row .right .country{
+    margin-left: -5% !important;    
+}
+.main-register-3 .people-count span{
+    margin: 0 !important;
+}
+.main-register-3 .people-count .span{
+    margin-left: -2px !important;
+}
+.main-register-3 .form-check{
+width: 30% !important;
+}
+.main-register-3 .form-check.switch2{
+margin-left: 105px !important;
+}
+}
+@media (max-width:992px){
+    
+.main-register-3 .row .right .religion , .main-register-3 .row .right .country{
+        margin-left: -10% !important;    
+}
+.main-register-3 .form-check{
+    width: 25% !important;
+    }
+.main-register-3 .form-check label span.moon{
+    left: 40% !important;
+    font-size: 15px;
+    top: 8px;
+}
+.main-register-3 .form-check label span.sun{
+    font-size: 15px;
+    top: 10px !important;
+
+}
+}
+@media (max-width:768px){
+    .main-register-3 .row .right .location{
+        width: 130%;
+    }
+.main-register-3 .row .right .form-select{
+    width: 30%;
+    height: 70%;
+    font-size: 14px;
+}
+.main-register-3 .row .right .form-check{
+    height: 50%;
+    width: 60%;
+}
+.main-register-3 .form-check label span.moon{
+    left: 30% !important;
+    font-size: 15px;
+    top: 2px;
+}
+.main-register-3 .form-check label span.sun{
+    font-size: 15px;
+    top: 2px !important;
+
+}
+.main-register-3 .row .right{
+        justify-content: start !important;
+}
+.main-register-3 .people-count span{
+    display: block;}
+    .main-register-3 .row .right .birth{
+        width: 150% !important;
+        height: 10%;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width:576px){
+    .main-register-3 .row .right .location{
+        width: 130%;
+    }
+.main-register-3 .row .right .form-check{
+    height: 30%;
+    width: 60% !important;
+    display: block;
+}
+.main-register-3 .form-check label span.moon{
+    left: 45% !important;
+}
+
+.main-register-3 .row .right .birth{
+    width: 150% !important;
+    height: 10%;
+    margin-top: 5%;
+}
+.main-register-3 .people-count span{
+    display: block;}
+}
+.main-register-3 .row .right .birth-text{
+    margin-bottom: -15px !important;
+}
+.main-register-3 .row .right .birth{
+    margin-top: 5%;
+}
+.main-register-3 .row .right .birth .form-select{
+    width: 18%;
+}
+.main-register-3 .right .people-count button {
+    width: 25px;
+    height: 22px;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 0; 
+    text-align: center;
+    line-height: 15px;
+    background-color: #F6F6F6;
+    border-color: #F6F6F6;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    color: #2387C2;
+    font-weight: 700;    
+}
+
+.main-register-3 .right .people-count .number {
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+}
+/* Check Inputs */
+.main-register-3 .form-check{
+    width: 220px;
+    height: 40px;
+}
+.main-register-3 .form-check label{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    background-color: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0,0, 0.4), inset 0px -5px 15px rgba(255,255,255,0.4, green, blue, alpha);
+    cursor: pointer;
+    transition: 0.3s ;
+}
+.main-register-3 .form-check label::after{
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 28px 28px 28px 28px ;
+    background-color:#FFD433 ;
+    transition: 0.3s ;
+}
+.main-register-3 .form-check input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.main-register-3 .form-check input:checked + label::after{
+    left: 100%;
+    transform: translateX(-100%);
+    background-color:#FFD433;
+}
+/* label:active::after{
+    width: 80px;
+} */
+.main-register-3 .form-check input:checked + label span.moon{
+    color: white;
+
+}
+.main-register-3 .form-check input:checked + label span.sun{
+    color: #292C2D;
+}
+.main-register-3 .form-check label span{
+    position: absolute;
+    font-size: 20px;
+    top: 5%;
+    z-index: 100;
+}
+.main-register-3 .form-check label span.sun{
+    left: 12%;
+    top: 10%;
+    fill: #fff;
+    transition: 0.5s;
+    color: white;
+
+}
+.main-register-3 .form-check label span.moon{
+    left: 55%;
+    fill: #7e7e7e;
+    transition: 0.5s;
+}
+.main-register-3 .form-check.switch2{
+    margin-left: 16%;
+}
+
+/* Button */
+.main-register-3 .right  .btn{
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 10px;
+    background-color: #2387C2;
+    border: 2px #2387C2 solid;
+    color: #fff;
+    text-align: center ;
+    padding: 4px;
+    margin-top: 10%;
+    margin-left: 10% !important; 
+    margin-bottom: 30px;
+}

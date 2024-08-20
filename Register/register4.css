@@ -1,0 +1,55 @@
+.main{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e3e3;
+}
+a{
+    cursor: pointer;
+}
+.register-4{
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.register-4 .code-numbers{
+    display: flex;
+    justify-content: center;
+}
+.register-4 .code-numbers input{
+    width: 14%;
+    height: 150%; 
+    margin: 0 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #e3e3e3 !important;
+}
+.register-4 .time{
+    color: #2387C2;
+}
+button{
+    width: 75%;
+    margin: 5px !important;
+    border-radius: 15px !important;
+    border: none;
+    padding: 5px;
+}
+button.verify{
+    background-color: #2387C2;
+    color: #fff;
+}
+button.not-now{
+    background-color: #fff;
+    border:1px solid #2387C2;
+    color: #2387C2;
+}

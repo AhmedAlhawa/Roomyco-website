@@ -1,0 +1,156 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.main-register-2{
+    height: 100vh !important;
+}
+.main-register-2 .numbers{
+    display: flex;
+    flex-direction: column;
+    left: 20% !important;
+    z-index: 2;
+    top: 30%;
+}
+.main-register-2 .numbers span{
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 1px solid #2387c2;
+    color: #2387c2;
+
+}
+@media (max-width:992px) {
+.main-register-2 .numbers span{
+    width: 40px;
+    height: 40px;
+    padding-top: 8px;
+    font-size: 15px;
+}}
+@media (max-width:576px) {
+    .main-register-2 .numbers{
+        left: 17% !important;
+    }
+    .main-register-2 .numbers span{
+        width: 35px;
+        height: 35px;
+        padding-top: 6px;
+    }
+}
+.main-register-2 .numbers span:first-child{
+    box-shadow: 1px 1px 20px   #2387c2;
+    background-color: #2387C2;
+    color: #fff;
+    border: 2px solid #5497be;
+}
+.main-register-2 .numbers span:nth-child(2){
+    box-shadow: 1px 1px 20px   #2387c2;
+    border: 2px solid #5497be;
+}
+.main-register-2 .row{
+    height: 100vh;
+}
+.main-register-2 .row .left{
+    background-image: url('../assets/register/Rectangle\ 1043.png');
+    clip-path: polygon(16% 0, 59% 0, 47% 32%, 46% 48%, 46% 62%, 54% 100%, 27% 100%, 0 100%, 0% 35%, 0 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: start !important;
+}
+.main-register-2 .row .left .sentence{
+    margin-top: 30%;
+    margin-left: 10%;
+    color: #035781;
+    font-size: 24px;
+    line-height: 36px;
+    width: 26%;
+}
+.row .logo{
+    display: flex;
+    margin-top: 8%;
+}
+.row .logo .text-1{
+    color: #2387C2;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2px;
+}
+.row .logo .text-2{
+    color: #2387C2;
+    font-weight: 100;
+    font-size: 11px;
+}
+@media (max-width:992px) {
+.main-register-2 .row .left .sentence{
+    font-size: 20px;
+    line-height: 30px;
+    width: 30%;
+}
+.row .logo{
+    margin-left: 2px !important;
+}
+.row .logo .text-1{
+font-weight: 500;
+font-size: 17px;
+}
+.row .logo .text-2{
+    font-size: 9px;
+}}
+@media (max-width:768px) {
+.row .logo .text-1{
+    font-weight: 600;
+    font-size: 12px;
+    }
+}
+@media (max-width:576px) {
+.main-register-2 .row .left .logo{
+    display: flex !important;
+    flex-direction: column !important;
+}
+.main-register-2 .row .left .logo img{
+    margin-left: 10% !important;
+}
+.row .logo .text-1,.row .logo .text-2{
+    margin-top: 8%;
+    margin-left: 8%;
+}}
+/* right */
+
+.main-register-2 .row .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.row .right .btn{
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 10px;
+    background-color: #2387C2;
+    border: 2px #2387C2 solid;
+    color: #fff;
+    text-align: center ;
+    padding: 4px;
+    margin-top: 10%;
+    margin-left: -25px !important; 
+}
+.form-check input:checked{
+    background-color: #F3704A;
+    background-size: 10px;
+    border: 1px solid #F3704A;
+}
+@media (max-width:768px){
+.row .right .btn{
+    margin-left:10px !important;
+}}
+@media (max-width:576px){
+.main-register-2 .row .right h4{
+    font-size: 18px;
+}
+}

@@ -1,0 +1,156 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.main-welcome-back{
+    height: 100vh;
+}
+.main-welcome-back .row{
+    height: inherit;
+}
+.main-welcome-back .row .left{
+    background-image: url('assets/register/Rectangle\ 1043.png');
+    clip-path: polygon(100% 0, 92% 38%, 92% 65%, 100% 100%, 26% 100%, 0 100%, 0% 35%, 0 0);
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:768px) {
+    .main-welcome-back .row .left .text-1{
+        font-size: 18px;
+        font-weight: 500;
+        }
+    .main-welcome-back .row .left .text-2{
+        font-size: 10px;
+        font-weight: 200;
+    }
+    .main-welcome-back .row .left .computer img{
+        width: 80%;
+        height: 80%;
+    }}
+@media (max-width:576px) {
+    .main-welcome-back .row .left .logo{
+        margin-left: 0px !important;
+    }
+    .main-welcome-back .row .left .text-1{
+        font-size: 16px;
+        font-weight: 500;
+        }
+        .main-welcome-back .row .left .text-2{
+            font-size: 10px;
+            font-weight: 200;
+        }}
+.row .logo{
+    display: flex;
+    margin-bottom: 15%;
+
+}
+.row .logo .text-1{
+    color: #2387C2;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2px;
+}
+.row .logo .text-2{
+    color: #2387C2;
+    font-weight: 100;
+    font-size: 11px;
+}
+/*  */
+.main-welcome-back .row .right{
+    display: flex;
+    flex-direction: column;
+}
+.main-welcome-back .row .right .text-1{
+    font-size: 28px;
+    font-weight: 300;
+    color: #2387C2;
+}
+.main-welcome-back .row .right .text-2{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+}
+@media (max-width:768px) {
+.form input{
+    width: 80% !important;
+}
+.buttons button{
+    width: 40% !important  ;
+}
+.links a{
+    padding: 12px !important;
+
+    }
+}
+@media (max-width:576px) {
+    .form input{
+        width: 90% !important;
+    }
+    .form .place{
+        left: 10% !important;
+    }
+    .buttons button{
+        width: 40% !important  ;
+    }
+    .links a{
+    padding: 10px !important;
+
+    }
+}
+.form .place{
+    top: 0;
+    left: 30%;
+    color: gray !important;
+}
+.form input{
+    border-radius: 10px;
+}
+.right a{
+    text-decoration: none;
+}
+.buttons button{
+    width: 25%;
+    border-radius: 10px;
+    margin: 0 10px;
+    color: #2387C2;
+    background-color: #fff;
+    border: 2px #2387C2 solid;
+    transition: all 0.2s ease-in; 
+
+}
+.buttons button:hover{
+    background-color: #2387C2;
+    border: 2px #2387C2 solid;
+    color: #fff;
+}
+.buttons .sign-in{
+    background-color: #2387C2;
+    border: 2px #2387C2 solid;
+    color: #fff;
+}
+.or{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 1.2rem;
+    justify-content: center;
+}
+.or .bar{
+    border: none;
+    width: 25%;
+    height: 1px;
+    background-color: gray;
+}
+.or span{
+    color: #aaa;
+    padding: 0 0.8rem;
+}
+.links a{
+    border: 1px solid #D9D9D7;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
