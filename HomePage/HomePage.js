@@ -1,5 +1,5 @@
 
-//  blurEffect for SlideBar
+//  blurEffect for Navbar
 window.addEventListener('scroll', function(e) {
     const navbar = document.getElementById('navbar');
     if (window.scrollY > 5) { // Change 50 to whatever pixel value you prefer
@@ -115,4 +115,62 @@ panels.forEach(item=>item.addEventListener('mouseenter',selectItem));
 const chat = document.getElementById('chat');
 chat.addEventListener("click",()=>{
     window.location.href="Chat/Chat.html"
+})
+
+// notifications
+ document.getElementById('notifications').addEventListener('click',()=>{
+    window.location.href="Notifications/Notifications.html"
+})
+// Room Select 
+const cards = document.querySelectorAll('.details')
+
+cards.forEach(card => {
+    card.style.cursor="pointer"
+    card.addEventListener("click", () => {
+        window.location.href = "ListPlace/listPlace.html";
+    });
+});
+
+// Roommate Select
+const roommates = document.querySelectorAll('.panel');
+roommates.forEach(item=>item.addEventListener('click',()=>{
+    window.location.href="SeekerRoommate/SeekerRoommate.html"
+}));
+
+// Ahmed Abu Alhawa 
+const allNamesT1 = document.querySelectorAll(".container1 .swiper-slide .t1")
+const allNamesT2 = document.querySelectorAll(".container1 .swiper-slide .t2")
+const allImgT1 = document.querySelectorAll(".container1 .swiper-slide .imt-1")
+const allImgT2 = document.querySelectorAll(".container1 .swiper-slide .imt-2")
+const next = document.getElementById('next')
+const prev = document.getElementById('prev')
+next.addEventListener("click",()=>{
+    allNamesT2.forEach(item=>{
+        item.style.transform="translateX(0px)"
+    })
+    allImgT2.forEach(item=>{
+        item.style.transform="translateX(0px)"
+    })
+    allNamesT1.forEach(item=>
+        item.style.transform="translateX(-200px)"
+    )
+    allImgT1.forEach(item=>
+        item.style.transform="translateX(-200px)"
+    )
+})
+prev.addEventListener("click",()=>{
+    allNamesT2.forEach(item=>{
+        item.style.transform="translateX(300px)"
+    })
+    allImgT2.forEach(item=>{
+        item.style.transform="translateX(300px)"
+    })
+    allNamesT1.forEach(item=>
+        item.style.transform="translateX(0px)"
+    )
+    allImgT1.forEach(item=>
+        item.style.transform="translateX(0px)"
+    )
+  
+   
 })

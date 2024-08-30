@@ -38,7 +38,7 @@
                 <div class="d-flex justify-content-between">
                     <img class="me-2" width="25" height="25" src="assets/heart-fill.svg" alt="">
                     <img id="chat" class="me-2" width="25" height="25" src="assets/chat.png" alt="">
-                    <img class="me-2" width="25" height="25" src="assets/bell-fill.svg" alt="">
+                    <img id="notifications" style="cursor: pointer;" class="me-2" width="25" height="25" src="assets/bell-fill.svg" alt="">
                     <img class="me-2" width="25" height="25" src="assets/grid-3x3-gap-fill.png" alt="">
                     <img class="me-2" width="25" height="25" src="assets/profile.png" alt="">
                     <img class="me-2" src="assets/Line 13.png" alt="">
@@ -108,50 +108,50 @@
             <div class="card-wrapper swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="image-box">
-                        <img src="assets/Sharjah.png" alt="">
+                        <img src="assets/Sharjah.png" class="imt-1" alt="">
                     </div>
                     <div class="name-city">
-                            <h6 class="name ms-4">Sharjah</h6>
+                            <h6 class="name ms-4 t1">Sharjah</h6>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="image-box">
-                        <img src="assets/Dubai.png" alt="">
+                        <img src="assets/Dubai.png" class="imt-1" alt="">
                     </div>
                         <div class="name-city">
-                            <h6 class="name ms-4">Dubai</h6>
+                            <h6 class="name ms-4 t1">Dubai</h6>
                         </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="image-box">
-                        <img src="assets/Ajman.png" alt="">
+                        <img src="assets/Ajman.png" class="imt-1" alt="">
                     </div>
                         <div class="name-city">
-                            <h6 class="name ms-4">Ajman</h6>
+                            <h6 class="name ms-4 t1">Ajman</h6>
                         </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="image-box">
-                        <img src="assets/Abu Dhabi.jpeg" alt="">
+                        <img class="imt-2" src="assets/Abu Dhabi.jpeg" alt="">
                     </div>
                         <div class="name-city">
-                            <h6 class="name ms-4 ">Abu Dhabi</h6>
+                            <h6 class="name ms-4 t2 ">Abu Dhabi</h6>
                         </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="image-box">
-                        <img src="assets/Sharjah2.jpeg" alt="">
+                        <img class="imt-2" src="assets/Sharjah2.jpeg" alt="">
                     </div>
                         <div class="name-city">
-                            <h6 class="name ms-4">Sharjah</h6>
+                            <h6 class="name ms-4 t2">Sharjah</h6>
                         </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="image-box">
-                        <img src="assets/Abu Dhabi 2.jpeg" alt="">
+                        <img class="imt-2" src="assets/Abu Dhabi 2.jpeg" alt="">
                     </div>
                         <div class="name-city">
-                            <h6 class="name ms-4">Dubai</h6>
+                            <h6 class="name ms-4 t2">Dubai</h6>
                         </div>
                 </div>
             </div>
@@ -174,12 +174,13 @@
             <p class="text-center mb-5 mt-3">Best rooms that match your need
             </p>
             <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
+                <div class="card swiper-slide" id="card-swiper">
                     <div class="image-box">
                         <img src="assets/basicRoom.png" alt="">
-                        <img class="pic2" src="assets/basicRoom.png" alt="">
-                        <i id="heart" class="far fa-heart icon"></i>
-
+                        <div class="pic2">
+                            <img  src="assets/basicRoom.png" alt="">
+                            <i id="heart" class="far fa-heart icon"></i>
+                        </div>
                     </div>
                     <div class="details">
                         <div class="title">
@@ -195,12 +196,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card swiper-slide">
+                <div class="card swiper-slide" id="card-swiper">
                     <div class="image-box">
                         <img src="assets/room1.png" alt="">
-                        <img class="pic2" src="assets/basicRoom.png" alt="">
-                        <i id="heart" class="far fa-heart icon"></i>
-
+                        <div class="pic2">
+                            <img  src="assets/basicRoom.png" alt="">
+                            <i id="heart" class="far fa-heart icon"></i>
+                        </div>
                     </div>
                     <div class="details">
                         <div class="title">
@@ -216,12 +218,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card swiper-slide">
+                <div class="card swiper-slide" id="card-swiper">
                     <div class="image-box">
                         <img src="assets/room3.png" alt="">
-                        <img class="pic2" src="assets/basicRoom.png" alt="">
-                        <i id="heart" class="far fa-heart icon"></i>
-
+                        <div class="pic2">
+                            <img  src="assets/basicRoom.png" alt="">
+                            <i id="heart" class="far fa-heart icon"></i>
+                        </div>
                     </div>
                     <div class="details">
                         <div class="title">
@@ -237,11 +240,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card swiper-slide">
+                <div class="card swiper-slide" id="card-swiper">
                     <div class="image-box">
                         <img width="225" src="assets/room2.png">
-                        <img class="pic2" src="assets/basicRoom.png" alt="">
-                        <i id="heart" class="far fa-heart icon"></i>
+                        <div class="pic2">
+                            <img  src="assets/basicRoom.png" alt="">
+                            <i id="heart" class="far fa-heart icon"></i>
+                        </div>
                     </div>
                     <div class="details">
                         <div class="title">
@@ -257,12 +262,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card swiper-slide">
+                <div class="card swiper-slide" id="card-swiper">
                     <div class="image-box">
                         <img  src="assets/room1.png" alt="">
-                        <img class="pic2" src="assets/basicRoom.png" alt="">
-                        <i id="heart" class="far fa-heart icon"></i>
-
+                        <div class="pic2">
+                            <img  src="assets/basicRoom.png" alt="">
+                            <i id="heart" class="far fa-heart icon"></i>
+                        </div>
                     </div>
                     <div class="details">
                         <div class="title">
@@ -278,12 +284,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card swiper-slide">
+                <div class="card swiper-slide" id="card-swiper">
                     <div class="image-box">
                         <img  src="assets/room2.png" alt="">
-                        <img class="pic2" src="assets/basicRoom.png" alt="">
-                        <i id="heart" class="far fa-heart icon"></i>
-
+                        <div class="pic2">
+                            <img  src="assets/basicRoom.png" alt="">
+                            <i id="heart" class="far fa-heart icon"></i>
+                        </div>
                     </div>
                     <div class="details">
                         <div class="title">
@@ -316,7 +323,8 @@
         <div class="row justify-content-around  available-rommate">
             <div class="col-lg-2 col-2 best-roommate">Best roomate that match your need</div>
             <div class="col-lg-9 col-9 d-flex">
-                <div class="panel active" style="background-image: url('assets/Ali.jfif');">
+                <div class="panel active" style="background-image: url('assets/Ali.jfif');
+                cursor:pointer;">
                     <h3 class="person-name">Ali saebe</h3>
 
                     <div class="content">
@@ -329,7 +337,8 @@
                             <p class="mt-2">4.8</p>
                         </div>
                     </div>                </div>
-                <div class="panel" style="background-image: url('assets/red.jfif');">
+                <div class="panel" style="background-image: url('assets/red.jfif');
+                cursor:pointer;">
                     <h3 class="person-name">Rama Kitta</h3>
 
                     <div class="content">
@@ -343,7 +352,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel" style="background-image: url('Assets/boy3.jfif');">
+                <div class="panel" style="background-image: url('Assets/boy3.jfif');
+                cursor:pointer;">
                     <h3 class="person-name">Joey Tribiani</h3>
 
                     <div class="content">
@@ -356,7 +366,8 @@
                             <p class="mt-2">4.8</p>
                         </div>
                     </div>                </div>
-                <div class="panel" style="background-image: url('Assets/Racheal.jfif');">
+                <div class="panel" style="background-image: url('Assets/Racheal.jfif');
+                cursor:pointer;">
                     <h3 class="person-name">Reachel Sa</h3>
 
                     <div class="content">
@@ -369,7 +380,8 @@
                             <p class="mt-2">4.8</p>
                         </div>
                     </div>                </div>
-                <div class="panel" style="background-image: url('Assets/Emma.jfif');">
+                <div class="panel" style="background-image: url('Assets/Emma.jfif');
+                cursor:pointer;">
                     <h3 class="person-name">Emma Stone</h3>
 
                     <div class="content">
