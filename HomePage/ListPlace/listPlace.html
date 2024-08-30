@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="ListPlace.css">
+
+    <title>List Place</title>
+</head>
+<body>
+<div class="main ">
+       <!-- Start of Navbar -->
+       <div class="container">
+
+        <nav class="d-flex justify-content-between" id="navbar">
+                <div class="d-flex logo">
+                    <span class="mx-3"><img  src="assets/logo.png" alt=""> </span>
+                    <div>
+                        <span class="d-block text-1">R O O M Y C O</span>
+                        <span class="text-2">R O O M M A T E</span>
+
+                    </div>
+                </div>
+            <div class="home-sentence">
+                <span id="home" style="cursor: pointer;" class="home-text">Home</span>
+                <span>See More</span>
+
+            </div>
+            <div class="d-flex justify-content-between">
+                <img class="me-2" width="25" height="25" src="assets/heart-fill.svg" alt="">
+                <img id="chat" class="me-2" width="25" height="25" src="assets/chat.png" alt="">
+                <img class="me-2" width="25" height="25" src="assets/bell-fill.svg" alt="">
+                <img class="me-2" width="25" height="25" src="assets/grid-3x3-gap-fill.png" alt="">
+                <img class="me-2" width="25" height="25" src="assets/profile.png" alt="">
+                <img class="me-2" src="assets/Line 13.png" alt="">
+                <img class="me-2" width="25" height="25" src="assets/Languages.png" alt="">
+            </div>
+
+        </nav>
+        <!-- seeker roommate  -->
+        
+    </div>
+    <div class="seeker-roommate row gap-3">
+        <div class="room-details col-lg-7 col-md-7 col-sm-7  col-7">
+            <div class="room-pics">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="assets/room.png" alt=""></div>
+                      <div class="swiper-slide"><img src="assets/room.png" alt=""></div>
+                      <div class="swiper-slide"><img src="assets/room.png" alt=""></div>
+                    
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="assets/right-arrow.png" alt="">
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <img src="assets/left-arrow.png" alt="">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+            <div class="tags my-3 ">
+                <a href="#overview" class="btn ">Overview</a>
+                <a href="#availability" class="btn">Availability and Budget</a>
+                <a href="#location" class="btn ">Location</a>
+                <a href="#amenities" class="btn">Amenities</a>
+                <a href="#suitable-for" class="btn ">Suitable for</a>   
+
+            </div>
+            <div class="line"></div>
+            <div class="hi-there mt-2" id="overview">
+                <p class="fw-bold">Hi there, I have apartment and I'm looking for roommate!</p>
+
+                <img src="assets/stars.svg"/>
+            </div>
+            <div class="line"></div>
+            <div class="details d-flex justify-content-between">
+                <div>
+                    <img src="assets/bed.svg" alt="">
+                    <span class="ms-2">2 Bedroom</span>
+                </div>
+                <div>
+                    <img src="assets/bathub.svg" alt="">
+                    <span class="ms-2">1 Bathroom</span>
+                </div>
+                <div>
+                    <img src="assets/buildings.png" alt="">
+                    <span class="ms-2">Apartment</span>
+                </div>
+            </div>
+            <div class="line"></div>
+            
+            <div class="availability" id="availability">
+                <p class="fw-bold">Availability and  Budget</p>
+
+                <div class="text-secondary">
+                    <span>Rent</span>
+                    <span class="right">Availability</span>
+                </div>
+                <div>
+                    <span>$1,000 / month</span>
+                    <span class="right">1st August </span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="location" id="location">
+                <p class="fw-bold my-2">Location</p>
+                <p class="text-secondary">Al Awee, Dubai</p>
+                <img src="assets/map.png" alt="">
+            </div>
+
+            <div class="amentais mt-5" id="amenities">
+                <p class="fw-bold">Amentais</p>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <img src="assets/wifi.png" alt="">
+                        <span class="ms-2">Wi-Fi</span>
+                    </div>
+                    <div>
+                        <img src="assets/p-circle.png" alt="">
+                        <span class="ms-2">Parking</span>
+                    </div>
+                    <div>
+                        <img src="assets/tv.png" alt="">
+                        <span class="ms-2">Television</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+            <p class="fw-bold">suitable-for</p>
+            <div class="suitable-for" id="suitable-for">
+                <div>
+                    <img src="assets/person.png" alt="">
+                    <span class="ms-2">Woman</span>
+                </div>
+                <div>
+                    <img src="assets/petprint.png" alt="">
+                    <span class="me-2">pet-allowed</span>
+                </div>
+                <div>
+                    <img src="assets/Islam.png" alt="">
+                    <span class="ms-2">Islam</span>
+                </div>
+                <div class="mt-2">
+                    <img src="assets/smoking.png" alt="">
+                    <span class="ms-2">Smoking</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-roommate col-lg-4 col-md-4 col-sm-4 col-4">
+            <div class="container c1">
+                <div class="card-head d-flex mt-3">
+                    <img  src="assets/rama.png" alt="">
+                    <span class="m-3 fs-5">Rama Kita</span>
+                </div>
+                <div class="location mt-3 d-flex">
+                    Location :
+                    <div>
+                    <img  src="assets/loc.png" alt=""> <span class="text-secondary"> Al Sharjah</span>
+                </div>
+                </div>
+                <div class="birth mt-3">
+                    Date of birth : <span class="text-secondary">32 years old</span>
+                </div>
+                <div class="life-style mt-4">
+                    Life style : <span>Bets Lover</span>
+                                <span>Photography</span>
+                </div>
+                <div class="description mt-4">
+                    Description : <span class="text-secondary">
+                         We have a 2 bedrooms available and 1 bathroom. The department is sunny and have special location. 
+                    </span>
+                </div>
+                <div class="buttons ms-3 mt-3 pb-4">
+                    <button class="send-message">Send message</button>
+                    <button class="follow-request">Follow request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+      <!-- Footer -->
+      <footer class="bg-dark text-white pt-5 ">
+        <div class="text-md-left overflow-x-hidden">
+          <div class="row text-md-left justify-content-between">
+            <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
+                <div class="d-flex logo mb-4">
+                    <span class="mx-3"><img  src="assets/footer/logo.png" alt=""> </span>
+                    <div>
+                        <span class="d-block text-1">R O O M Y C O</span>
+                        <span class="text-2">R O O M M A T E</span>
+                    </div>
+                </div>              
+                <p class="text-center w-75">
+                find your prefer room and choose roommate who agree 
+              </p>
+              <div class="d-flex justify-content-around my-3">
+                <span><img width="30" height="30" src="assets/footer/instagram.png" alt=""> </span>
+                <span> <img src="assets/footer/facebook.png" alt=""> </span>
+                <span> <img width="30" height="30" src="assets/footer/twitter.png" alt=""></span>
+                <span> <img width="30" height="30" src="assets/footer/tiktok.png" alt=""></span>
+                <span> <img width="30" height="30" src="assets/footer/whatsapp.png" alt="">
+                </span>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2 col-xl-3  mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold ">Terms & Politics</h5>
+              <p>
+                <span href="#" class="text-white" style="text-decoration: none;">Terms of services</span>
+              </p>
+              <p>
+                <span href="#" class="text-white" style="text-decoration: none;">Privacy policy</span>
+              </p>
+              <p>
+                <span href="#" class="text-white" style="text-decoration: none;">Cookie Policy</span>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+            
+              <p>
+                <img class="mx-2" width="30" height="30" src="assets/footer/gmail2.png" alt="gmail-new"/>
+                <a href="#" class="text-white" style="text-decoration: none;">
+                  roomyco@room.com</a>
+              </p>
+              <p>
+                <img class="mx-2" width="30" height="30" src="assets/footer/phone.png" alt="gmail-new"/>
+                <a href="#" class="text-white" style="text-decoration: none;">+971 586 834 566</a>
+              </p>
+              <p>
+                <img class="mx-2" width="30" height="30" src="assets/footer/location2.png" alt="gmail-new"/>
+                <a href="#" class="text-white" style="text-decoration: none;">Emirates</a>
+              </p>
+            </div>
+          </div>
+            <div class="copy-right">
+              <p class="text-center text-white mt-4">Copyright @2024 All rights reserved by ROOMYCO
+              </p>
+            </div>
+        </div>
+      </footer>
+<script src="swiper-bundle.min.js"></script>
+
+    <script>
+     
+    </script>
+    <script type="module" src="ListPlace.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html> 
