@@ -1,0 +1,305 @@
+.main{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 270vh;
+    overflow-x: hidden; 
+    background-color: #F8F4DB    ;
+    padding-bottom: 20px;
+    /* position: relative; */
+}
+nav{
+    position: fixed;
+    z-index: 8;
+    width: 90%;
+    background-color: #DCDFDF ;
+    padding: 18px;
+    border-radius: 0px 0px 30px 30px;
+    transition: all 0.5s ease-in-out ;
+    transform: translateX(-5%);
+}
+#chat{
+    cursor: pointer;
+}
+nav.blur-effect {
+    background-color: rgba(220, 223, 223, 0.3); /* 70% transparent */
+}
+.logo .text-1{
+    color: #2387C2;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 2px;
+    padding-top: 5px;
+}
+.logo .text-2{
+    color: #2387C2;
+    font-weight: 100;
+    font-size: 10px;
+}
+.container .home-text{
+    color: #035781;
+    margin-right: 5px !important;
+}
+@media (max-width:768px){
+.logo .text-1{
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 0px;
+    }
+nav .home-sentence{
+        font-size: 12px;
+}
+nav img{
+        height: 65%;
+}
+nav .home-sentence{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+}}
+@media (max-width:576px){
+    nav{
+        width: 100%;
+        transform: translateX(0%);
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        padding-bottom: 0;
+    }
+    nav img{
+        height: 50%;
+    }
+nav .home-sentence{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    transform: translateY(-25%);
+        }
+.logo .text-1{
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 0px;
+    padding-top: 5px;
+}}
+
+.seeker-roommate{
+    width: 90%;
+    transform: translateX(7%);
+    height: 80vh;
+    margin-top: 7% !important;
+}
+
+.seeker-roommate .card-roommate{
+    position: fixed;
+    top: 0;
+    right: 50px ; 
+    background-color: #F2EACC;
+    height: fit-content;
+    border-radius: 0px 15px 15px 0 ;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-roommate input{
+    background-color: #F2EACC ;
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 100px !important;
+    border: 0.5px solid #CAC6B7;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-bottom: 45px;
+    padding-left: 10px;
+}
+.card-roommate .buttons button{
+    width: 75%;
+    margin: 5px ;
+    border-radius: 15px ;
+    padding: 5px;
+}
+.card-roommate button.send-message{
+    background-color: #2387C2;
+    border:1px solid #2387C2;
+    color: #fff;
+}
+.card-roommate button.follow-request{
+    background-color: #F2EACC;
+    border:1px solid #2387C2;
+    color: #2387C2;
+}
+
+/* room-details */
+.seeker-roommate .room-details{
+    height: 80vh;
+}
+.room-details .room-pics{
+    width: 101%;
+    height: 80%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-next,.swiper-button-prev{
+    color: #CECBBF;
+    background-color: #CECBBF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.swiper-button-next img,.swiper-button-prev img{
+    position: absolute;
+    color: #CECBBF;
+    background-color: #CECBBF;
+    border-radius: 50%;
+}
+.tags{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+.tags a{
+    cursor: pointer;
+    font-size: 13px;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #DAD6C8;
+    margin: 20px 0;
+}
+.availability .text-secondary{
+    font-size: 12px;
+    margin: 5px 0;
+}
+.availability .right{
+    margin-left: 40%;
+}
+.availability .text-secondary .right{
+    margin-left: 53%;
+}
+.location img{
+    width: 90%;
+}
+.amentais{
+    font-size: 13px;
+}
+.suitable-for{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 13px;
+}
+
+
+/* Footer */
+.copy-right{
+    margin-top: 5% !important;
+    border: 1px solid #BEDFF3;
+    border-bottom: none;
+    /* padding-top: 10px; */
+    /* height: 100px; */
+    width: 100%;
+    border-radius: 20px;
+}
+@media (max-width:992px){
+    .seeker-roommate .room-pics{
+        margin-top: 10% !important;
+    }
+    .seeker-roommate .card-roommate{
+        top: 40px !important;
+        right: 30px;
+        font-size: 14px;
+    }
+    .seeker-roommate .card-head img{
+        width: 20% ;
+    }
+    .seeker-roommate .card-head span{
+        font-size: 15px !important;   
+    }
+}
+@media (max-width:768px){
+    .seeker-roommate .room-pics{
+        margin-top: 12% !important;
+    }
+    .seeker-roommate .room-details{
+        font-size: 11px;
+    }
+    .seeker-roommate .room-details .amentais, .seeker-roommate .room-details .suitable-for{
+        font-size: 11px;
+    }
+    .seeker-roommate .room-details .amentais img,
+    .seeker-roommate .room-details .suitable-for img{
+        width: 20%;
+    }
+    .seeker-roommate .room-details .details img{
+        width: 15%;
+    }
+    .seeker-roommate .room-details .details{
+        display: grid !important;
+        grid-template-columns: repeat(2,1fr) !important;
+        row-gap: 5px;
+    }
+    .seeker-roommate .card-roommate{
+        right: 10px;
+        font-size: 13px;
+        top: 40px !important;
+    }
+    .seeker-roommate .card-head img{
+        width: 17% ;
+        height: 50px;
+    }
+    .seeker-roommate .card-roommate input{
+        width: 80%;
+        height: 50px !important;
+        padding-bottom: 0 !important;
+    }
+    .seeker-roommate .card-roommate .buttons{
+        margin: 0  !important;
+        margin-left: 10px  !important;
+        font-size: 12px;
+        /* width: 85%;
+        margin: 5px ; */
+    }
+    .tags{
+        display: grid;
+        grid-template-columns: repeat(3,2fr) ;
+    }
+}
+@media (max-width:576px){
+    .seeker-roommate .card-roommate{
+        top: 28px !important;
+        right: 0px;
+        font-size: 11px;
+    }
+    .seeker-roommate .card-head img{
+        width: 20% ;
+        margin-top: 5px;
+    }
+    .seeker-roommate .card-head span{
+        font-size: 12px !important;   
+    }
+    .seeker-roommate .card-roommate input{
+        width: 100%;
+        height: 40px !important;
+        margin-left: 0 !important;
+    }
+    .seeker-roommate .card-roommate .buttons button{
+        width: 110%;
+        margin-left: -5px !important;
+    }
+}
