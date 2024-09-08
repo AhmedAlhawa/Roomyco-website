@@ -117,6 +117,11 @@ chat.addEventListener("click",()=>{
     window.location.href="Chat/Chat.html"
 })
 
+// favorite
+document.getElementById('favorite').addEventListener('click',()=>{
+    window.location.href="./Favorite/favorite.html"
+  })
+  
 // notifications
  document.getElementById('notifications').addEventListener('click',()=>{
     window.location.href="Notifications/Notifications.html"

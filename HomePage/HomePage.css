@@ -10,7 +10,8 @@
 nav{
     position: fixed;
     z-index: 99;
-    width: 80%;
+    width: 100%;
+    left: 0px;
     background-color: #DCDFDF ;
     padding: 18px;
     border-radius: 0px 0px 30px 30px;
@@ -76,15 +77,17 @@ nav.blur-effect {
     font-size: 17px;
     line-height: 2px;
     padding-top: 5px;
+    display: block;
 }
 .logo .text-2{
     color: #2387C2;
     font-weight: 100;
     font-size: 10px;
 }
-.container .home-text{
+ .home-text{
     color: #035781;
     margin-right: 5px !important;
+    cursor: pointer;
 }
 @media (max-width:992px){
 .search-bar{
@@ -156,15 +159,60 @@ nav .home-sentence{
         line-height: 0px;
         padding-top: 5px;
     }
+    .carousel-indicators{
+        top: 90%;
+    }
     .search-bar{
-        top: 45%;
+        display:flex;
+        flex-direction: column;
+        background: none;
+        top: 40%;
         left: 20%;
         width: 65%;
-    height: 25%;
+        height: 25%;
+    }
+    .search-bar input{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .search-bar span{
+        top: 40%;
+        width: 10%;
+    }
+    .search-bar .search{
+        width: 100%;
     }
     .find{
-        top: 74%;
-
+        margin-top: 5px;
+        top: 78%;
+    }
+}
+@media (max-width:430px){
+    .find{display: none;}
+    nav .pics{
+        display: flex;
+        width: 45%;
+    }
+    nav .text{
+        display: none !important;
+    }
+    nav .logo span{
+        display: block;
+        transform: translateY(-10px);
+    }
+    nav .home-sentence{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .search-bar span{
+        top: 40%;
+        left:10%
+    }
+    .search-bar input{
+        height: 350% !important;
+    }
+    footer .terms{
+        margin-left: 20px;
     }
 }
 
@@ -243,7 +291,20 @@ transition: transform 1s ease-in-out ;
     font-size: 18px;
 
 }
-
+@media (max-width:430px){
+    .container1 .swiper-navBt1{
+        display: none !important;
+    }
+    #next , #prevv1{
+        display: none;
+    }
+    .container1 .swiper-slide .imt-2 ,.container1 .swiper-slide .t2{
+        transform: translateX(0px);
+    }
+    .copy-right{
+        padding-bottom: 60px !important;
+    }
+}
 
 /* Card Slider */
 
@@ -453,6 +514,7 @@ margin-right: 40px;
 /* footer{height: 100px !important;} */
 .copy-right{
     margin-top: 5% !important;
+    margin-bottom: 2% !important;
     border: 1px solid #BEDFF3;
     border-bottom: none;
     padding-top: 10px;
