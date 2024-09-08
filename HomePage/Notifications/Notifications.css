@@ -7,17 +7,16 @@
     background-color: #F8F4DB    ;
     padding-bottom: 20px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 nav{
     position: fixed;
     z-index: 8;
-    width: 90%;
+    width: 100%;
     background-color: #DCDFDF ;
     padding: 18px;
     border-radius: 0px 0px 30px 30px;
     transition: all 0.5s ease-in-out ;
-    transform: translateX(-5%);
 }
 #chat{
     cursor: pointer;
@@ -64,28 +63,49 @@ nav .home-sentence{
         font-size: 14px;
 }}
 @media (max-width:576px){
-    nav{
-        width: 100%;
-        transform: translateX(0%);
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr;
-        padding-bottom: 0;
-    }
-    nav img{
-        height: 50%;
-    }
+nav{
+    width: 100%;
+    transform: translateX(0%);
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding-bottom: 0;
+}
+nav img{
+    height: 50%;
+}
 nav .home-sentence{
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    transform: translateY(-25%);
-        }
+display: flex;
+flex-direction: column;
+font-size: 12px;
+transform: translateY(-25%);
+    }
 .logo .text-1{
     font-weight: 500;
     font-size: 8px;
     line-height: 0px;
     padding-top: 5px;
 }}
+@media (max-width:430px){
+    nav .pics{
+        display: flex;
+        width: 45%;
+    }
+    nav .text{
+        display: none !important;
+    }
+    nav .logo span{
+        transform: translateY(-6px);
+    }
+    nav .logo span img{
+        width: 25px;
+        height: 20px;
+    }
+    nav .home-sentence{
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+
 .notifications{
     width: 50%;
     height: fit-content;
@@ -262,4 +282,10 @@ nav .home-sentence{
         margin:0 0 0px 12px;
         font-size: 9px;
     }
+}
+@media (max-width:430px){
+.notifications{
+    width: 70%;
+    transform: translateX(-20%);
+}
 }
