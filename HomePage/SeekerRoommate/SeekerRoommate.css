@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    height: 270vh;
+    height: fit-content;
     overflow-x: hidden; 
     background-color: #F8F4DB    ;
     padding-bottom: 20px;
@@ -80,7 +80,14 @@ nav .home-sentence{
     line-height: 0px;
     padding-top: 5px;
 }}
-
+@media (max-width:430px){
+    .logo div{
+        display: none;
+    }
+    .main{
+        height: 180vh;
+    }
+}
 .seeker-roommate{
     width: 90%;
     transform: translateX(7%);
