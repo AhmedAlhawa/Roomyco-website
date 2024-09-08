@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../general-2.css">
+    <link rel="stylesheet" href="favorite.css">
+    <title>favorite</title>
+</head>
+<body>
+    <nav class="d-flex justify-content-between" id="navbar">
+        <div class="d-flex logo">
+            <span class="mx-3"><img  src="assets/logo.png" alt=""> </span>
+            <div class="text">
+                <span class="d-block text-1">R O O M Y C O</span>
+                <span class="text-2">R O O M M A T E</span>
+
+            </div>
+        </div>
+    <div class="home-sentence">
+        <span id="home" style="cursor: pointer;" class="home-text text-primary me-2 fs-4">Home</span>
+        <span class="fs-4">See More</span>
+
+    </div>
+    <div class="d-flex justify-content-between pics">
+        <img class="me-2" width="25" height="25" src="assets/heart-fill.svg" style="cursor: pointer;">
+        <img id="chat" class="me-2" width="25" height="25" src="assets/chat.png" style="cursor: pointer;">
+        <img id="bell-fill" class="me-2" width="25" height="25" src="assets/bell-fill.svg" style="cursor: pointer;">
+        <img class="me-2" width="25" height="25" src="assets/grid-3x3-gap-fill.png" style="cursor: pointer;">
+        <img class="me-2" width="25" height="25" src="assets/profile.png" style="cursor: pointer;">
+        <img class="me-2" src="assets/Line 13.png" style="cursor: pointer;">
+        <img class="me-2" width="25" height="25" src="assets/Languages.png" style="cursor: pointer;">
+    </div>
+
+</nav>
+    <div class="favorite-container">
+        <div class="favorite-header">
+          <h4 class="favorite-title">My favorite</h4>
+          <div class="chat-icons">
+            <button><img src="assets/chat-dots.svg" alt="" /></button>
+          </div>
+        </div>
+  
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="favorite-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#favorite-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="favorite-tab-pane"
+              aria-selected="true"
+            >
+              Favorite
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="overlooked-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#overlooked-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="overlooked-tab-pane"
+              aria-selected="false"
+            >
+              Overlooked
+            </button>
+          </li>
+        </ul>
+  
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="favorite-tab-pane"
+            role="tabpanel"
+            aria-labelledby="favorite-tab"
+            tabindex="0"
+          >
+            <div class="favorite-list">
+              <div class="favorite-item">
+                <div class="chat-icons">
+                  <button><img src="assets/chat-dots.svg" alt="" /></button>
+                </div>
+                <div class="favorite-img">
+                  <img src="assets/Rectangle 1000.png" alt="" />
+                </div>
+                <div class="favorite-content">
+                  <div class="favorite-heading">
+                    <h3 class="heading-tertiary">Shared bedroom, Sharjah</h3>
+                    <div class="rating">
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                    </div>
+                  </div>
+  
+                  <p class="price"><span>$ 1,000</span> /month</p>
+  
+                  <div class="rooms">
+                    <div>
+                      <img
+                        src="assets/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>2 Bedroom</span>
+                    </div>
+                    <div>
+                      <img
+                        src="assets/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>1 Bathroom</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="favorite-item">
+                <div class="chat-icons">
+                  <button><img src="assets/chat-dots.svg" alt="" /></button>
+                </div>
+                <div class="favorite-img">
+                  <img src="assets/Rectangle 1000.png" alt="" />
+                </div>
+                <div class="favorite-content">
+                  <div class="favorite-heading">
+                    <h3 class="heading-tertiary">Shared bedroom, Sharjah</h3>
+                    <div class="rating">
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                    </div>
+                  </div>
+  
+                  <p class="price"><span>$ 1,000</span> /month</p>
+  
+                  <div class="rooms">
+                    <div>
+                      <img
+                        src="assets/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>2 Bedroom</span>
+                    </div>
+                    <div>
+                      <img
+                        src="assets/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>1 Bathroom</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="favorite-item">
+                <div class="chat-icons">
+                  <button><img src="assets/chat-dots.svg" alt="" /></button>
+                </div>
+                <div class="favorite-img">
+                  <img src="assets/Rectangle 1000.png" alt="" />
+                </div>
+                <div class="favorite-content">
+                  <div class="favorite-heading">
+                    <h3 class="heading-tertiary">Shared bedroom, Sharjah</h3>
+                    <div class="rating">
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                    </div>
+                  </div>
+  
+                  <p class="price"><span>$ 1,000</span> /month</p>
+  
+                  <div class="rooms">
+                    <div>
+                      <img
+                        src="assets/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>2 Bedroom</span>
+                    </div>
+                    <div>
+                      <img
+                        src="assets/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>1 Bathroom</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="overlooked-tab-pane"
+            role="tabpanel"
+            aria-labelledby="overlooked-tab"
+            tabindex="0"
+          >
+            <div class="favorite-list">
+              <div class="favorite-item">
+                <div class="chat-icons">
+                  <button><img src="assets/chat-dots.svg" alt="" /></button>
+                </div>
+                <div class="favorite-img">
+                  <img src="assets/Rectangle 1000.png" alt="" />
+                </div>
+                <div class="favorite-content">
+                  <div class="favorite-heading">
+                    <h3 class="heading-tertiary">Shared bedroom, Sharjah</h3>
+                    <div class="rating">
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                    </div>
+                  </div>
+  
+                  <p class="price"><span>$ 1,000</span> /month</p>
+  
+                  <div class="rooms">
+                    <div>
+                      <img
+                        src="assets/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>2 Bedroom</span>
+                    </div>
+                    <div>
+                      <img
+                        src="assets/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>1 Bathroom</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="favorite-item">
+                <div class="chat-icons">
+                  <button><img src="assets/chat-dots.svg" alt="" /></button>
+                </div>
+                <div class="favorite-img">
+                  <img src="assets/Rectangle 1000.png" alt="" />
+                </div>
+                <div class="favorite-content">
+                  <div class="favorite-heading">
+                    <h3 class="heading-tertiary">Shared bedroom, Sharjah</h3>
+                    <div class="rating">
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                      <img src="assets/full-star.svg" alt="" />
+                    </div>
+                  </div>
+  
+                  <p class="price"><span>$ 1,000</span> /month</p>
+  
+                  <div class="rooms">
+                    <div>
+                      <img
+                        src="assets/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>2 Bedroom</span>
+                    </div>
+                    <div>
+                      <img
+                        src="assets/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>1 Bathroom</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="../../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="favorite.js"></script>
+</body>
+</html>
