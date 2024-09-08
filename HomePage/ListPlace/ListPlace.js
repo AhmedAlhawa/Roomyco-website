@@ -61,8 +61,18 @@ const chat = document.getElementById('chat');
 chat.addEventListener("click",()=>{
     window.location.href="../Chat/Chat.html"
 })
-// Home
+
 // Home
 document.getElementById('home').addEventListener('click',()=>{
     window.location.href="../HomePage.html"
 })
+// favorite
+document.getElementById('favorite').addEventListener('click',()=>{
+    window.location.href="../Favorite/favorite.html"
+  })
+  
+  // notifications
+  document.getElementById('notifications').addEventListener('click',()=>{
+    window.location.href="../Notifications/Notifications.html"
+  })
+  
